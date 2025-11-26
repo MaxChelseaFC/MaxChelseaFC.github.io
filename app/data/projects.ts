@@ -48,5 +48,23 @@ export const projects: Project[] = [
         skills: [["Langages et framewroks", "PHP", "Symfony", "HTML/CSS", "JavaScript"],["Outils et applications", "Git", "GitLab", "Trello", "Docker"]],
         realisations: [["Developpement", "Travailler dans un environnement Docker", "Définir des accès selon le rôle", "Travailler en autonomie"],
             ["Analyse", "Identifier, définir et prioriser les tâches"]]
+    },
+    {
+        id: "stage-hexis",
+        title: "Développeur web (stage)",
+        description: "Refonte d'un site et développement d'une application",
+        details:
+            `Hexis est une entreprise internationale qui travaille principalement sur les films PVC.
+            
+             Ce stage a eu lieu durant la seconde année de mon BUT Informatique. 
+             
+             J'ai travaillé dans le service communication, où il y avait un autre développeur travaillant à distance.`,
+        image: "/img/hexis.png",
+        period: "3 mois (Avril 2024 - Juin 2024)",
+        place: "Hexis, Frontignan",
+        skills: [["Langages et framewroks", "PHP", "HTML/CSS", "JavaScript", "jQuery"],["Outils et applications", "WordPress", "Elementor", "WP Plugins", "Figma", "Teams"],
+            ["Méthodologies", "Réunions", "Maquettage"]],
+        realisations: [["Refonte du site des formations", "J'ai réalisé la refonte du site proposant des formations, en utilisant d'abord Figma pour le maquettage, et ensuite WordPress et des plugins comme Elementor pour intégrer ces maquettes."],
+            ["Application de feedback", "J’ai créé une application utilisée lors d’un événement organisé par l’entreprise. Cette application permettait aux invités de laisser un avis sur les stands en leur offrant la possibilité de noter et d’écrire un commentaire après avoir scanné des QR codes. Elle a été développée en PHP, JavaScript et HTML/CSS."]]
     }
 ];
