@@ -296,16 +296,29 @@ function GravityStarsBackground({
 
   React.useEffect(() => {
     resizeCanvas();
+
     const container = containerRef.current;
+
+    const isMobile =
+        typeof window !== "undefined" &&
+        /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    // ❌ Désactiver ResizeObserver sur mobile (cause le reset au scroll)
     const ro =
-      typeof ResizeObserver !== 'undefined'
-        ? new ResizeObserver(resizeCanvas)
-        : null;
+        !isMobile && typeof ResizeObserver !== "undefined"
+            ? new ResizeObserver(() => resizeCanvas())
+            : null;
+
     if (container && ro) ro.observe(container);
-    const onResize = () => resizeCanvas();
-    window.addEventListener('resize', onResize);
+
+    const onResize = () => {
+      if (!isMobile) resizeCanvas();
+    };
+
+    window.addEventListener("resize", onResize);
+
     return () => {
-      window.removeEventListener('resize', onResize);
+      window.removeEventListener("resize", onResize);
       if (ro && container) ro.disconnect();
     };
   }, [resizeCanvas]);
