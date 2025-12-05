@@ -52,7 +52,7 @@ export const projects: Project[] = [
     {
         id: "stage-hexis",
         title: "Développeur web (stage)",
-        description: "Refonte d'un site et développement d'une application",
+        description: "Refonte d'un site et développement d'une application.",
         details:
             `Hexis est une entreprise internationale qui travaille principalement sur les films PVC.
             
@@ -66,5 +66,33 @@ export const projects: Project[] = [
             ["Méthodologies", "Réunions", "Maquettage"]],
         realisations: [["Refonte du site des formations", "J'ai réalisé la refonte du site proposant des formations, en utilisant d'abord Figma pour le maquettage, et ensuite WordPress et des plugins comme Elementor pour intégrer ces maquettes."],
             ["Application de feedback", "J’ai créé une application utilisée lors d’un événement organisé par l’entreprise. Cette application permettait aux invités de laisser un avis sur les stands en leur offrant la possibilité de noter et d’écrire un commentaire après avoir scanné des QR codes. Elle a été développée en PHP, JavaScript et HTML/CSS."]]
-    }
+    },
+    {
+        id: "portfolio",
+        title: "Portfolio",
+        description: "Réalisation de mon portfolio.",
+        details:
+            `J'ai décidé de refaire mon portfolio afin de pouvoir clairement exposer mes compétences et mon profil.`,
+        image: "/img/portfolio.png",
+        period: "Novembre 2025 - Maintenant",
+        skills: [["Langages et framewroks", "React", "Tailwind", "HTML/CSS", "JavaScript", "TypeScript", "Animate UI"]],
+        realisations: [["Utilisation de nouvelles technologies", "Dans une démarche de veille technologique et d'apprentissage, j'ai conçu ce portfolio en utilisant React et d'autres outils tels que Tailwind."]]
+    },
+    {
+        id: "sae-s3",
+        title: "Gestion des stages et des alternances",
+        description: "Application permettant de gérer les stages et les alternances du BUT Informatique.",
+        details:
+            `Les SAEs (situations d'apprentissage et d'évaluation) sont des projets donnés aux étudiants du BUT. Ils ont souvent pour objectif de simuler ce à quoi un projet dans un contexte professionnel pourrait ressembler.
+            
+            Durant la seconde année de ma formation, j'ai travaillé sur une SAE visant à créer une application permettant au personnel de l'IUT de gérer les stages et les alternances des étudiants.
+            
+            Ce projet a été réalisé en groupe de cinq personnes.`,
+        image: "/img/sae3.PNG",
+        period: "5 mois (Septembre 2023 - Janvier 2024)",
+        place: "IUT Montpellier-Sète, Montpellier",
+        skills: [["Langages et framewroks", "PHP", "HTML/CSS", "JavaScript"],["Outils et applications", "GitLab", "Trello"],["Méthodologies", "Méthodes agiles (SCRUM)"],["Données", "SQL", "MySQL"]],
+        realisations: [["Management", "Utilisation des méthodes agiles, avec un Scrum master et un product owner"],
+            ["Analyse", "Conception des user stories", "planification de projet"]]
+    },
 ];
