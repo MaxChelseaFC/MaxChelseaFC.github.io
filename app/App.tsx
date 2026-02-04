@@ -44,7 +44,7 @@ export default function App() {
 
                 {/* Footer */}
                 <footer className="z-10 bg-gray-900 text-white p-6 text-center shadow-inner">
-                    &copy; 2025 Maxime Petit
+                    &copy; 2026 Maxime Petit
                 </footer>
 
             </div>
