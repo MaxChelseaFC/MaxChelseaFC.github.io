@@ -34,7 +34,7 @@ export default function Presentation() {
                     </p>
                     <LiquidButton asChild variant="default" size="default">
                         <a
-                            href="/img/CV_2025_Maxime_PETIT.pdf"
+                            href="/img/CV_2026_Maxime_PETIT.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
